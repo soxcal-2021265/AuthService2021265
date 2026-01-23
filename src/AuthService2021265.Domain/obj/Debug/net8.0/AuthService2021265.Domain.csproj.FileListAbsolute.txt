@@ -1,0 +1,11 @@
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\bin\Debug\net8.0\AuthService2021265.Domain.deps.json
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\bin\Debug\net8.0\AuthService2021265.Domain.dll
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\bin\Debug\net8.0\AuthService2021265.Domain.pdb
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\obj\Debug\net8.0\AuthService2021265.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\obj\Debug\net8.0\AuthService2021265.Domain.AssemblyInfoInputs.cache
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\obj\Debug\net8.0\AuthService2021265.Domain.AssemblyInfo.cs
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\obj\Debug\net8.0\AuthService2021265.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\obj\Debug\net8.0\AuthService2021265.Domain.dll
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\obj\Debug\net8.0\refint\AuthService2021265.Domain.dll
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\obj\Debug\net8.0\AuthService2021265.Domain.pdb
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Domain\obj\Debug\net8.0\ref\AuthService2021265.Domain.dll

@@ -1,0 +1,17 @@
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\bin\Debug\net8.0\AuthService2021265.Persistence.deps.json
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\bin\Debug\net8.0\AuthService2021265.Persistence.dll
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\bin\Debug\net8.0\AuthService2021265.Persistence.pdb
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\bin\Debug\net8.0\AuthService2021265.Application.dll
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\bin\Debug\net8.0\AuthService2021265.Domain.dll
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\bin\Debug\net8.0\AuthService2021265.Domain.pdb
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\bin\Debug\net8.0\AuthService2021265.Application.pdb
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\AuthService2021265.Persistence.csproj.AssemblyReference.cache
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\AuthService2021265.Persistence.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\AuthService2021265.Persistence.AssemblyInfoInputs.cache
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\AuthService2021265.Persistence.AssemblyInfo.cs
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\AuthService2021265.Persistence.csproj.CoreCompileInputs.cache
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\AuthServ.C0C4C695.Up2Date
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\AuthService2021265.Persistence.dll
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\refint\AuthService2021265.Persistence.dll
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\AuthService2021265.Persistence.pdb
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Persistence\obj\Debug\net8.0\ref\AuthService2021265.Persistence.dll
