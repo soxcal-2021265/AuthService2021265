@@ -7,7 +7,7 @@ public interface IUserRepository
     Task<User> CreateAsync(User user);
     Task<User> GetByIdAsync(string id);
     Task<User?> GetByEmailAsync(string email);
-    Task<User> GetByUserNameAsync(string username);
+    Task<User> GetByUsernameAsync(string username);
     Task<User> GetByEmailVerificationTokenAsync(string token);
     Task<User> GetByPasswordResetTokenAsync(string token);
     Task<bool> ExistsByEmailAsync(string email);
