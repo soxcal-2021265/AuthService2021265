@@ -37,3 +37,4 @@ C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Api\obj\D
 C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Api\obj\Debug\net8.0\AuthService2021265.Api.pdb
 C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Api\obj\Debug\net8.0\AuthService2021265.Api.genruntimeconfig.cache
 C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Api\obj\Debug\net8.0\ref\AuthService2021265.Api.dll
+C:\Users\Informatica\Desktop\AuthService2021265\src\AuthService2021265.Api\obj\Debug\net8.0\AuthService2021265.Api.sourcelink.json

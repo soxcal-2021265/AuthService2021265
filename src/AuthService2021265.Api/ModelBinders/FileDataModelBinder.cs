@@ -1,22 +1,22 @@
 using AuthService2021265.Api.Models;
-using AuthService2021265.Application.Interface;
-using Microsoft.AspNetCore.Mvs.ModelBinding;
+using AuthService2021265.Application.Interfaces;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace AuthService2021265.Api.ModelBinders;
 
 public class FileDataModelBinder : IModelBinder
 {
-    public Task BinModelAsync(ModelBidingContext bidingContext)
+    public Task BindModelAsync(ModelBidingContext bidingContext)
     {
         ArgumentNullException.ThrowIfNull(bidingContext);
-
+ 
         if (!typeof(IFileData).IsAssignableFrom(bidingContext))
         {
             return Task.CompletedTask;
         }
-
+ 
         var request = bidingContext.HttpContext.Request;
-
+ 
         var file = request.Form.Files.GetFile(bindingContext.FileName);
         if(file != null && file.Lenght > 0)
         {
@@ -30,7 +30,7 @@ public class FileDataModelBinder : IModelBinder
         return Task.CompletedTask;
     }
 }
-
+ 
 public class FileDataModelBinderProvider : IModelBinderProvider
 {
     public IModelBinder? GetBinder(ModelBinderProviderContext context)
