@@ -1,4 +1,4 @@
-using AuthService2021265.Application.Interface;
+using AuthService2021265.Application.Interfaces;
 
 namespace AuthService2021265.Api.Models;
 
@@ -28,5 +28,5 @@ public class FormFileAdapter : IFileData
 
     public string ContentType => _formFile.ContentType;
     public string FileName => _formFile.FileName;
-    public long Size => _formFile.Lenght;
+    public long Size => _formFile.Length;
 }

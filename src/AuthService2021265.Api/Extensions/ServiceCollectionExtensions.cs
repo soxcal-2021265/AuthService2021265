@@ -2,7 +2,7 @@ using AuthService2021265.Domain.Interface;
 using AuthService2021265.Persistence.Data;
 using AuthService2021265.Persistence.Repositories;
 using Microsoft.EntityFrameworkCore;
-using AuthService2021265.Application.Interface;
+using AuthService2021265.Application.Interfaces;
 using AuthService2021265.Application.Services;
 
 namespace AuthService2021265.Api.Extensions;
@@ -17,6 +17,12 @@ public static class ServiceCollectionExtensions
         
             services.AddScoped<UserRepository, UserRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IAuthService, Application.Services.AuthService>();
+            services.AddScoped<IUserManagementService, UserManagementService>();
+            services.AddScoped<IPasswordHashService, PasswordHashService>();
+            services.AddScoped<IJwtTokenService, JwtTokenService>();
+            services.AddScoped<ICloudinaryService, CloudinaryService>();
+            services.AddScoped<IEmailService, EmailService>();
 
             services.AddHealthChecks();
 

@@ -1,5 +1,5 @@
 using System.ComponentModel.DataAnnotations;
-using AuthService2021265.Application.Interface;
+using AuthService2021265.Application.Interfaces;
 
 namespace AuthService2021265.Application.DTOs;
 

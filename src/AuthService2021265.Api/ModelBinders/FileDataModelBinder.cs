@@ -6,26 +6,27 @@ namespace AuthService2021265.Api.ModelBinders;
 
 public class FileDataModelBinder : IModelBinder
 {
-    public Task BindModelAsync(ModelBidingContext bidingContext)
+    public Task BindModelAsync(ModelBindingContext bindingContext)
     {
-        ArgumentNullException.ThrowIfNull(bidingContext);
+        ArgumentNullException.ThrowIfNull(bindingContext);
  
-        if (!typeof(IFileData).IsAssignableFrom(bidingContext))
+        if (!typeof(IFileData).IsAssignableFrom(bindingContext.ModelType))
         {
             return Task.CompletedTask;
         }
  
-        var request = bidingContext.HttpContext.Request;
+        var request = bindingContext.HttpContext.Request;
  
-        var file = request.Form.Files.GetFile(bindingContext.FileName);
-        if(file != null && file.Lenght > 0)
+        var file = request.Form.Files.GetFile(bindingContext.FieldName);
+
+        if(file != null && file.Length > 0)
         {
             var fileData = new FormFileAdapter(file);
-            bidingContext.Result = ModelBidingResult.Succes(fileData);
+            bindingContext.Result = ModelBindingResult.Success(fileData);
         }
         else
         {
-            bidingContext.Result = ModelBidingResult.Succes(null);
+            bindingContext.Result = ModelBindingResult.Success(null);
         }
         return Task.CompletedTask;
     }

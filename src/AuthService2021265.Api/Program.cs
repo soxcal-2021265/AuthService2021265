@@ -1,4 +1,5 @@
 using AuthService2021265.Persistence.Data;
+using AuthService2021265.Api.Middlewares;
 using AuthService2021265.Api.Extensions;
 using AuthService2021265.Api.ModelBinders;
 using Serilog;
@@ -12,15 +13,18 @@ builder.Host.UseSerilog((context, services, loggerConfiguration) =>
         .ReadFrom.Configuration(context.Configuration)
         .ReadFrom.Services(services));
 
-builder.Services.AddControllers(FileOptions =>
+builder.Services.AddControllers(options =>
 {
-    FileOptions.ModelBinderProviders.Insert(0, new FileDataModelBinderProvider());
+    options.ModelBinderProviders.Insert(0, new FileDataModelBinderProvider());
 })
-.addJsonOptions(o =>
+.AddJsonOptions(o =>
 {
-    object.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
+    o.JsonSerializerOptions.PropertyNamingPolicy = System.Text.Json.JsonNamingPolicy.CamelCase;
 });
 builder.Services.AddApplicationServices(builder.Configuration);
+builder.Services.AddApiDocumentation();
+builder.Services.AddJwtAuthentication(builder.Configuration);
+builder.Services.AddRateLimitingPolicies();
 
 var app = builder.Build();
 
@@ -58,14 +62,15 @@ app.UseSecurityHeaders(policies => policies
     .AddCustomHeader("Cache-Control", "no-store, no-cache, must-revalidate, private")
 );
 
-//Global exception handling
+// Global exception handling
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
-//Core middLewares
+// Core middlewares
 app.UseHttpsRedirection();
 app.UseCors("DefaultCorsPolicy");
-//app.UserRateLimiter();
-//app.UseAuthentification();
-//app.UseAuthentification();
+app.UseRateLimiter();
+app.UseAuthentication();
+app.UseAuthorization();
 
 app.MapControllers();
 

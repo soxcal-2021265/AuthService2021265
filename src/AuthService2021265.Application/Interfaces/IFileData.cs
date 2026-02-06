@@ -1,4 +1,4 @@
-namespace AuthService2021265.Application.Interface;
+namespace AuthService2021265.Application.Interfaces;
 
 public interface IFileData
 {

@@ -8,7 +8,7 @@ public static partial class LoggerExtensions
     [LoggerMessage(
         EventId = 1001,
         Level = LogLevel.Information,
-        Message = "User [Username] registered succesfully"
+        Message = "User {Username} registered succesfully"
     )]
     public static partial void LogUserRegistered(this ILogger logger, string username);
 

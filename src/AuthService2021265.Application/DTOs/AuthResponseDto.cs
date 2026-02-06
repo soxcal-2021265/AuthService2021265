@@ -2,9 +2,9 @@ namespace AuthService2021265.Application.DTOs;
 
 public class AuthResponseDto
 {
-    public bool Succes { get; set; } = false;
+    public bool Success { get; set; } = false;
     public string Message { get; set; } = string.Empty;
     public string Token { get; set; } = string.Empty;
     public UserDetailsDto UserDetails { get; set; } = new();
-    public DateTime ExpireAt { get; set; }
+    public DateTime ExpiresAt { get; set; }
 }
